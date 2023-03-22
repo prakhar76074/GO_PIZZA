@@ -4,8 +4,9 @@ import swal from 'sweetalert'
 
 export const registerUser = (user) => async dispatch => {
    dispatch({type : 'USER_REGISTER_REQUEST'})
-
+// console.log("here")
    try {
+    //  console.log("here2")
        const res = await axios.post('/api/users/register' , user)
        dispatch({type : 'USER_REGISTER_SUCCESS'})
    } catch (error) {

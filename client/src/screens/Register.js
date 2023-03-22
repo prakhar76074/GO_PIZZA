@@ -26,6 +26,7 @@ function Register() {
         }
         else {
             const user = {name , email, password, confirmPassword}
+            console.log(user)
             dispatch(registerUser(user))
         }
     }
